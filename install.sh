@@ -30,6 +30,7 @@ fi
 cp -f "$HOME/.tmux.conf" "$HOME/.tmux.conf.bak" 2>/dev/null || true
 ln -sf "$REPODIR"/tmux "$HOME"/.tmux
 ln -sf "$REPODIR"/tmux/tmux.conf "$HOME"/.tmux.conf
+ln -sf "$REPODIR"/tmux/tmux.remote.conf "$HOME"/tmux.remote.conf
 
 # Install TPM plugins.
 # TPM requires running tmux server, as soon as `tmux start-server` does not work
